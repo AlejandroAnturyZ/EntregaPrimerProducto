@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+
+#Contenedor_pagina_uniamazonia {
+
+    width: 100%;
+    height: 380vh;
+}
+
+#BarraPrincipal {
+
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+#LogoMen {
+
+    width: 300px;
+    height: 50px;
+    border-left: solid 5px rgb(194, 3, 3);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#LogoGov-co {
+    width: 150px;
+    height: 35px;
+    margin-top: 10px;
+    margin-right: 80px;
+}
+
+#LogoEmisora {
+    width: 50px;
+    height: 50px;
+    margin-left: 80px;
+}
+
+#idioma {
+    display: flex;
+    align-items: center;
+}
+
+#ListaIdioma:hover #config_idiom {
+    transition: 3000ms;
+    transform: rotate(360deg);
+}
+
+#Lenguaje {
+    width: 45px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+#config_idiom {
+    width: 20px;
+    height: 20px;
+}
+
+#Nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-image: url(https://img.freepik.com/vector-premium/fondo-plantas-exoticas-selva-hojas-palmeras-tropicales-ilustracion-selva-tropical-colores-verdes_444390-4054.jpg?semt=ais_hybrid);
+    box-shadow: 0px 0px 15px rgb(25, 71, 14);
+}
+
+#NavColor {
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.685);
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+.tituloNav {
+    color: black;
+    font-size: 0.9rem;
+}
+
+.tituloNav:hover {
+    color: #b40000;
+}
+
+.tituloNav::after {
+    color: #b40000;
+}
+
+#InputBusqueda:focus {
+    border-color: #b40000;
+    box-shadow: 0 0 5px #b40000;
+    outline: none;
+}
+
+#BotonBusqueda {
+    border-color: #b40000;
+    color: #b40000;
+}
+
+#BotonBusqueda:hover {
+    border-color: #b40000;
+    background-color: #b40000;
+    color: #ffffff;
+}
+
+#PresentacionUniamazonia {
+    width: 100%;
+    height: 80vh;
+    background-image: url(https://img.freepik.com/vector-premium/fondo-plantas-exoticas-selva-hojas-palmeras-tropicales-ilustracion-selva-tropical-colores-verdes_444390-4054.jpg?semt=ais_hybrid);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgb(25, 71, 14);
+
+}
+
+#LogoUniamazonia {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: 20px;
+    box-shadow: 0px 0px 30px rgb(17, 153, 23);
+    z-index: 2;
+
+}
+
+
+#Img_logo {
+    width: 200;
+    height: 150px;
+}
+
+#VideoAcreditacion {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    border-radius: 150px;
+    visibility: hidden;
+    position: absolute;
+}
+
+#LogoUniamazonia:hover {
+    width: 900px;
+    height: 300px;
+    margin-left: 210px;
+    border-radius: 0%;
+    border-radius: 500px 500px 500px 500px;
+    transition-duration: 500ms;
+}
+
+#LogoUniamazonia:hover #VideoAcreditacion {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    transition: opacity 2s ease, visibility 2s ease;
+}
+
+#LogoUniamazonia:hover~#SeccionInicial {
+    margin-left: 90px;
+    transition-duration: 500ms;
+}
+
+#LogoUniamazonia:not(:hover) {
+    width: 300px;
+    height: 300px;
+    transition-duration: 500ms;
+}
+
+#LogoUniamazonia:not(:hover)~#SeccionInicial {
+    margin-left: 200px;
+    transition-duration: 500ms;
+}
+
+#LogoUniamazonia:not(:hover) #VideoAcreditacion {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: opacity 0.1s ease, visibility 0.1s ease;
+}
+
+
+#SeccionInicial {
+
+    width: 85%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 200px;
+}
+
+#SeccionInicial video {
+    width: 95%;
+    height: 98vh;
+    border-radius: 300px;
+}
+
+#Opacidad {
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    opacity: 20%;
+    z-index: 1;
+}
+
+#Opacidad2 {
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    opacity: 60%;
+    z-index: 1;
+}
+
+#Opacidad3 {
+    width: 100%;
+    height: 170vh;
+    position: absolute;
+    background: linear-gradient(black, black, black, rgba(0, 0, 0, 0.336), black, black, black);
+    opacity: 60%;
+    z-index: 1;
+}
+
+#ContenedorChaira {
+    width: 100%;
+    height: 20vh;
+    background-image: url(https://img.freepik.com/vector-premium/fondo-plantas-exoticas-selva-hojas-palmeras-tropicales-ilustracion-selva-tropical-colores-verdes_444390-4054.jpg?semt=ais_hybrid);
+    display: flex;
+    justify-content: center;
+}
+
+.BotonesChaira {
+    background-color: #b40000;
+    font-size: 0.8rem;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
+    z-index: 2;
+
+}
+
+.BotonesChaira:hover {
+    width: 90px;
+    height: 90px;
+    font-size: 0rem;
+    transition-duration: 300ms;
+}
+
+.BotonesChaira:not(:hover) {
+    width: 100px;
+    height: 100px;
+    font-size: 0.8rem;
+    transition-duration: 300ms;
+}
+
+.imgChaira {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+
+#Inscripcion {
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.botonInfo {
+    width: 85px;
+    height: 65px;
+    border: none;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 10px;
+    z-index: 10;
+}
+
+.botonInfo:hover {
+    width: 500px;
+    height: 65px;
+    transition: 500ms;
+}
+
+.botonInfo:not(:hover) {
+    width: 85px;
+    height: 65px;
+    transition: 500ms;
+}
+
+
+.BotonesInformacion {
+    width: 100%;
+    height: 100%;
+    border-radius: 500px;
+    object-fit: cover;
+    object-position: 2px;
+}
+
+#SeccionContenido {
+    width: 100%;
+    height: 170vh;
+    background-image: url(https://wildexpedition.com/wp-content/uploads/2023/11/Keel-billed-Toucan-Ramphastos-sulfuratus-01-HD-1920%C3%971080-min.jpg.webp);
+    background-size: 120% 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "Carousel Carousel"
+        "Noticias Noticias"
+        "Noticias Noticias";
+}
+
+#Carousel {
+    grid-area: Carousel;
+    margin-top: 20px;
+    z-index: 10;
+}
+
+#BarraImagenes {
+    border-radius: 50px;
+}
+
+
+
+#Noticias {
+    grid-area: Noticias;
+    border-radius: 100px;
+    z-index: 10;
+}
+
+#ContenedorSeccioNoticias {
+    width: 100%;
+    height: 88%;
+    padding: 20px;
+    display: flex;
+}
+
+#NoticiasUniamazonia {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#TituloNoticias {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.Noticia {
+    display: flex;
+    width: 365px;
+    height: 140px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.452);
+    color: #ffffff;
+}
+
+.InfoNoticia {
+    margin: 10px;
+}
+
+.ImgNoticia {
+    width: 40%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.ContenidoNoti {
+    margin-top: 5px;
+}
+
+.VerMas {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#RedesSociales {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 2px #ffffff;
+}
+
+.BotonRedesSociales{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    margin: 15px;
+}
+
+.BotonRedesSociales:hover{
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    transition: 500ms;
+}
+
+.BotonRedesSociales:not(:hover){
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    transition: 500ms;
+}
+
+.ImagenRedeSociales{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
