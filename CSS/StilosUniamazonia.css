@@ -12,7 +12,7 @@ html {
 #Contenedor_pagina_uniamazonia {
 
     width: 100%;
-    height: 380vh;
+    height: 400vh;
 }
 
 #BarraPrincipal {
@@ -243,6 +243,15 @@ html {
     z-index: 1;
 }
 
+#Opacidad4 {
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    background: linear-gradient(black, black, black, rgba(0, 0, 0, 0.336), black, black, black);
+    opacity: 80%;
+    z-index: 1;
+}
+
 #ContenedorChaira {
     width: 100%;
     height: 20vh;
@@ -452,4 +461,191 @@ html {
     width: 100%;
     height: 100%;
     border-radius: 50px;
+}
+
+#VerMasNoticias{
+    width: 25%;
+    height: 40px;
+    background-color: rgb(30, 182, 0);
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+
+#VerMasNoticias:hover{
+    width: 30%;
+    font-size: 1.3rem;
+    transition: 500ms;
+    box-shadow: 0px 0px 30px rgb(30, 182, 0);
+}
+
+#VerMasNoticias:not(:hover){
+    width: 25%;
+    font-size: 1rem;
+    transition: 500ms;
+}
+
+#Ultimo_contenedor{
+    width: 100%;
+    height: 140vh;
+    margin-top: 2px;
+    background-image: url(https://mejorconsalud.as.com/wp-content/uploads/2023/10/heliconia.jpg);
+    background-size: 100%, 100%;
+
+}
+
+#Ultima_seccion{
+    width: 100%;
+    height: 70%;
+    padding: 10px;
+    display: flex;
+}
+
+#ParteIzquierda{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    z-index: 10;
+}
+
+.InfoParteIzquierda{
+    width: 100%;
+    height: 15%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: none;
+    margin: 5px;
+}
+
+.ImgParteIzquierda{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#ParteCentral{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+#UbicacionUniamazonia{
+    width: 100%;
+    height: 45%;
+    border-radius: 20px;
+}
+
+#VideoUniamazonia{
+    width: 100%;
+    height: 45%;
+    border-radius: 20px;
+}
+
+#ParteDerecha{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    z-index: 10;
+}
+
+.InfoParteDerecha{
+    width: 100%;
+    height: 15%;
+    border: none;
+    border-radius: 20px;
+}
+.BotonesDerecha{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 7.5px;
+    background-color: #ffffff;
+}
+
+.BotonesDerecha:hover, .InfoParteDerecha:hover{
+    box-shadow: 0px 0px 15px #f30303;
+    transition: 500ms;
+}
+.BotonesDerecha:not(:hover), .InfoParteDerecha:not(:hover){
+    box-shadow: 0px 0px 0px #f30303;
+    transition: 500ms;
+}
+
+.BotonesDerecha:hover .imgDerechaPlus{
+    transition: 500ms;
+    transform: rotate(90deg);
+}
+.BotonesDerecha:not(:hover) .imgDerechaPlus{
+    transition: 500ms;
+    transform: rotate(-90deg);
+}
+
+.imgDerechaPlus{
+    width: 25px;
+    height: 25px;
+}
+
+#ParteDerechaEnlaces{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+#ParteDerechaEnlaces a{
+    margin: 10px;
+}
+
+.AlinearTexto{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+#ContenedorIconos{
+    width: 100%;
+    height: 10%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+
+.TitulosEnlaces{
+    font-size: 1.25rem;
+    color: #ffffff;
+    padding: 20px;
+}
+
+#pie_pagina{
+    width: 100%;
+    height: 20%;
+    background-color: #000000a2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    z-index: 10;
+}
+#pie_pagina p{
+    padding: 2px;
+    font-size: 0.7rem;
 }
